@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         //Creamos el ADAPTADOR
         val adapter = AdapterLanding(itemsShop)
         recyclerViewLanding.adapter = adapter
+        //Tambien se puede hace así? recyclerViewLanding.adapter = AdaptadorLanding(itemsShop)
 
     }
 }

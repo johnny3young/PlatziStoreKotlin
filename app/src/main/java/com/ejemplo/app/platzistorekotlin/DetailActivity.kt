@@ -3,6 +3,7 @@ package com.ejemplo.app.platzistorekotlin
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_detail.*
+import kotlinx.android.synthetic.main.content_descr.*
 
 class DetailActivity : AppCompatActivity() {
 
@@ -10,10 +11,10 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
-        //Validamos que el item no sea nulo para recuperar la info
-        intent?.let {
-            val textFromMain = it.extras.getString("Text")
-            txtDetails.text = textFromMain
+        intent?.extras?.let {
+            txtDetailTitulo.text = it.getString("title")
+            txtDetailDesc.text = it.getString("desc")
+            txtDetailPrecio.text= "${String.format("%.2f", it.getDouble("price"))}"
         }
 
     }

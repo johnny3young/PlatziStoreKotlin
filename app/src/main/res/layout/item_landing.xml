@@ -13,9 +13,11 @@
             >
 
         <ImageView
+                android:id="@+id/imgItemHeader"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:scaleType="centerInside"
+                android:transitionName="transitionHeader"
                 android:src="@drawable/mascotas_07"
                 />
 
@@ -30,6 +32,7 @@
                     android:id="@+id/txtTitleItem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:transitionName="transitionTitle"
                     tools:text="Titulo"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
@@ -37,6 +40,7 @@
                     android:id="@+id/txtDescItem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:transitionName="transitionDesc"
                     tools:text="Titulo"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
 
@@ -44,6 +48,7 @@
                     android:id="@+id/txtPriceItem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:transitionName="transitionPrice"
                     tools:text="Titulo"
                     android:textColor="@color/colorAccent"
                     android:layout_gravity="right"
