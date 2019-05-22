@@ -7,12 +7,13 @@ import android.widget.TextView
 import org.jetbrains.anko.AnkoContext
 import org.jetbrains.anko.find
 
-/*
 class AdaptadorCarrito(val data:List<ItemListPOJO>) : RecyclerView.Adapter<AdaptadorCarrito.Holder>() {
 
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): Holder =
+        Holder(AnkoItemCart().createView(AnkoContext.Companion.create(p0!!.context, this, false)))
+
         //Creamos el item de la lista
-        Holder(ItemList().createView(AnkoContext.Companion.create(p0.context,this,false)))
+        //Holder(AnkoItemCart().createView(AnkoContext.Companion.create(p0.context,this,false)))
 
     override fun onBindViewHolder(p0: Holder, p1: Int) {
         //Bindear toda la lista PERO primero en la clase HOLDER (está abajo) se crean los VIEW que vamos a estar utilizando
@@ -40,4 +41,4 @@ class AdaptadorCarrito(val data:List<ItemListPOJO>) : RecyclerView.Adapter<Adapt
         }
     }
 
-}*/
+}

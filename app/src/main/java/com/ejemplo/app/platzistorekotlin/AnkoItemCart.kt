@@ -8,8 +8,7 @@ import org.jetbrains.anko.*
 import org.jetbrains.anko.cardview.v7.cardView
 
 //EXTEND (:) de ANKO COMPONENT para no usar el FINDVIEWBYID
-/*
-class ItemList: AnkoComponent<AdaptadorCarrito> {
+class AnkoItemCart: AnkoComponent<AdaptadorCarrito> {
 
     override fun createView(ui: AnkoContext<AdaptadorCarrito>): View = with(ui){
         verticalLayout{
@@ -50,4 +49,4 @@ class ItemList: AnkoComponent<AdaptadorCarrito> {
             }
         }
     }
-}*/
+}
